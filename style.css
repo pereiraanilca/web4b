@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --roxo: #7047eb;
+    --roxo-escuro: #5030bd;
+    --fundo: #f7f6fc;
+    --texto: #28243b;
+    --cinza: #77748a;
+    --borda: #eceaf4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'Inter', sans-serif;
+}
+
+.topo {
+    min-height: 48px;
+}
+
+.logo {
+    color: var(--texto);
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--roxo);
+}
+
+.data {
+    color: var(--cinza);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.boas-vindas {
+    padding: 28px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #eee8ff, #ffffff);
+    border: 1px solid #e8e0ff;
+}
+
+.etiqueta {
+    color: var(--roxo);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    max-width: 700px;
+    margin: 8px 0;
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: 800;
+}
+
+.subtitulo {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.boas-vindas .subtitulo {
+    max-width: 650px;
+    margin-bottom: 0;
+}
+
+.resumo {
+    height: 100%;
+    padding: 22px;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    background: white;
+}
+
+.icone {
+    display: inline-grid;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+    place-items: center;
+    border-radius: 12px;
+    background: #f0ebff;
+    color: var(--roxo);
+    font-size: 20px;
+}
+
+.resumo p {
+    margin-bottom: 5px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.resumo h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.resumo small {
+    color: var(--cinza);
+    font-size: 11px;
+}
+
+.painel {
+    padding: 26px;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    background: white;
+}
+
+.titulo-secao {
+    margin-bottom: 7px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.btn-roxo {
+    display: inline-block;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 10px;
+    background: var(--roxo);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-roxo:hover {
+    background: var(--roxo-escuro);
+    color: white;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filtro {
+    padding: 9px 13px;
+    border: 1px solid var(--borda);
+    border-radius: 9px;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.filtro.ativo {
+    border-color: var(--roxo);
+    background: #f0ebff;
+    color: var(--roxo);
+    font-weight: 700;
+}
+
+.lista-tarefas {
+    display: grid;
+    gap: 10px;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px;
+    border: 1px solid var(--borda);
+    border-radius: 13px;
+}
+
+.marcador {
+    display: grid;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    place-items: center;
+    border: 2px solid #d8d3e8;
+    border-radius: 7px;
+    color: white;
+    font-size: 12px;
+}
+
+.tarefa-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.tarefa-info h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tarefa-info p {
+    margin: 0;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.prioridade {
+    padding: 6px 9px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.alta {
+    background: #fff0f0;
+    color: #c34848;
+}
+
+.media {
+    background: #fff5df;
+    color: #a56a00;
+}
+
+.baixa {
+    background: #e9f8ef;
+    color: #23834b;
+}
+
+.tarefa.concluida .marcador {
+    border-color: var(--roxo);
+    background: var(--roxo);
+}
+
+.tarefa.concluida h3 {
+    color: #9995a7;
+    text-decoration: line-through;
+}
+
+.nota {
+    padding: 18px;
+    border-radius: 12px;
+    background: #f5f1ff;
+    color: var(--roxo-escuro);
+    font-size: 13px;
+}
+
+.nota p {
+    margin: 7px 0 0;
+    color: #71678f;
+    line-height: 1.6;
+}
+
+footer {
+    color: var(--cinza);
+    font-size: 11px;
+}
+
+@media (max-width: 576px) {
+    .data {
+        max-width: 130px;
+        text-align: right;
+        line-height: 1.5;
+    }
+
+    .boas-vindas,
+    .painel {
+        padding: 20px;
+    }
+
+    .tarefa {
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .tarefa-info h3 {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .prioridade {
+        padding: 5px 7px;
+        font-size: 10px;
+    }
+}
